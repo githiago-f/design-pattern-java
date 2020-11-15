@@ -17,4 +17,8 @@ public class ContaComum implements Conta {
     public double getSaldo() {
         return admDeSaldo.saldo;
     }
+
+    public void saca(double valor) {
+        admDeSaldo.saca(valor);
+    }
 }

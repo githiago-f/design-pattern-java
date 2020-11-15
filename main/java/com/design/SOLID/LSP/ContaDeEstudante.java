@@ -26,4 +26,9 @@ public class ContaDeEstudante implements Conta {
     public int getMilhas() {
         return milhas;
     }
+
+    @Override
+    public void saca(double valor) {
+        admDeSaldo.saca(valor);
+    }
 }

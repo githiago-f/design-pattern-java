@@ -1,14 +1,12 @@
 import SOLID.LSP.Conta;
 import SOLID.LSP.ProcessadorDeInvestimentos;
 
+import java.util.List;
+
 class Main {
     public static void main(String[] args) {
-        var contas = ProcessadorDeInvestimentos.contasDoBanco();
-        for (Conta conta : contas) {
-            conta.rende();
+        List<Conta> contas = ProcessadorDeInvestimentos.contasDoBanco();
 
-            System.out.println("Novo Saldo:");
-            System.out.println(conta.getSaldo());
-        }
+        contas.forEach(Conta::rende);
     }
 }

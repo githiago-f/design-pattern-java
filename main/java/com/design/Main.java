@@ -1,12 +1,7 @@
-import SOLID.LSP.Conta;
-import SOLID.LSP.ProcessadorDeInvestimentos;
-
-import java.util.List;
 
 class Main {
-    public static void main(String[] args) {
-        List<Conta> contas = ProcessadorDeInvestimentos.contasDoBanco();
-
-        contas.forEach(Conta::rende);
+    public static void main(String[] args) throws InterruptedException {
+        System.out.println("Hello world!");
+        Thread.sleep(10000);
     }
 }
